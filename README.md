@@ -1,21 +1,24 @@
-# Bloglist frontend
+# Ultimate hooks
 
-In this exercise, we will refactor the Bloglist application that we worked on in parts four and five for it to use Redux for the application's state management. We also used `React Router` for conditional rendering of components based on the url in the browser, as well as `React Bootstrap` for styling our application.
+In this exercise, we are refactoring [this app](https://github.com/fullstack-hy2020/ultimate-hooks) using custom hooks. This app displays notes and phone numbers fetched from a backend server.
 
-We assume that a user already exist in the database with the good credentials. If not, please head to part 4 for creating a new user using the API.
+However, we noticed that the same code responsible for fetching notes from the backend could be reused in the blog post application. Indeed, only the `baseUrl` differs. As a result, we extracted the code for communicating with a backend server into its own `useResource` hook.
 
-## Start the application locally
+## Start the application
 
-To start an application:
+To start an application, do the following :
 
 ```bash
-# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
-
 # Install dependancies
 $ npm install
-
-# Start the frontend application
+# Start the JSON Server
+$ npm run server
+# On another terminal, start the application
 $ npm start
 ```
 
 You can then access the app on : http://localhost:3000/
+
+You can also see the content of the JSON Server by heading to:
+* http://localhost:3005/notes
+* http://localhost:3005/persons
