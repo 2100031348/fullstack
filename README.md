@@ -1,21 +1,21 @@
-# Routed anecdotes
+# Bloglist frontend
 
-In this exercise, we made a new version of the anecdote voting application from part 1 using React Router.
+In this exercise, we will refactor the Bloglist application that we worked on in parts four and five for it to use Redux for the application's state management. We also used `React Router` for conditional rendering of components based on the url in the browser, as well as `React Bootstrap` for styling our application.
 
-Indeed, the app were not very optimal. The address always stayed the same even though at times we are in different views. Each view should preferably have its own address, e.g. to make bookmarking possible. If the application were to grow bigger and we wanted to, for example, add separate views for each user and anecdote, then the navigation management of the application, would get overly complicated.
+We assume that a user already exist in the database with the good credentials. If not, please head to part 4 for creating a new user using the API.
 
-To fix this issue, we used the [React router](https://github.com/ReactTraining/react-router) library
+## Start the application locally
 
-## Start the application
-
-To start an application, do the following :
+To start an application:
 
 ```bash
+# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
+
 # Install dependancies
 $ npm install
 
-# Start the application
+# Start the frontend application
 $ npm start
 ```
 
-You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can then access the app on : http://localhost:3000/
