@@ -1,24 +1,40 @@
-# Ultimate hooks
+# Patientor - frontend
 
-In this exercise, we are refactoring [this app](https://github.com/fullstack-hy2020/ultimate-hooks) using custom hooks. This app displays notes and phone numbers fetched from a backend server.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-However, we noticed that the same code responsible for fetching notes from the backend could be reused in the blog post application. Indeed, only the `baseUrl` differs. As a result, we extracted the code for communicating with a backend server into its own `useResource` hook.
+## Available Scripts
 
-## Start the application
+In the project directory, you can run:
 
-To start an application, do the following :
+### `npm install`
 
-```bash
-# Install dependancies
-$ npm install
-# Start the JSON Server
-$ npm run server
-# On another terminal, start the application
-$ npm start
-```
+Install the project dependencies.
 
-You can then access the app on : http://localhost:3000/
+### `npm start`
 
-You can also see the content of the JSON Server by heading to:
-* http://localhost:3005/notes
-* http://localhost:3005/persons
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
