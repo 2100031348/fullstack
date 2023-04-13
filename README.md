@@ -1,8 +1,10 @@
-# Ultimate hooks
+# Routed anecdotes
 
-In this exercise, we are refactoring [this app](https://github.com/fullstack-hy2020/ultimate-hooks) using custom hooks. This app displays notes and phone numbers fetched from a backend server.
+In this exercise, we made a new version of the anecdote voting application from part 1 using React Router.
 
-However, we noticed that the same code responsible for fetching notes from the backend could be reused in the blog post application. Indeed, only the `baseUrl` differs. As a result, we extracted the code for communicating with a backend server into its own `useResource` hook.
+Indeed, the app were not very optimal. The address always stayed the same even though at times we are in different views. Each view should preferably have its own address, e.g. to make bookmarking possible. If the application were to grow bigger and we wanted to, for example, add separate views for each user and anecdote, then the navigation management of the application, would get overly complicated.
+
+To fix this issue, we used the [React router](https://github.com/ReactTraining/react-router) library
 
 ## Start the application
 
@@ -11,14 +13,9 @@ To start an application, do the following :
 ```bash
 # Install dependancies
 $ npm install
-# Start the JSON Server
-$ npm run server
-# On another terminal, start the application
+
+# Start the application
 $ npm start
 ```
 
-You can then access the app on : http://localhost:3000/
-
-You can also see the content of the JSON Server by heading to:
-* http://localhost:3005/notes
-* http://localhost:3005/persons
+You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
