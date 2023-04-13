@@ -1,21 +1,19 @@
-# Unicafe
+## GraphQL frontend
 
-This web application collects customer feedback. There are only three options for feedback: good, neutral, and bad.
+Through the exercises, we will implement a GraphQL frontend for the GraphQL-library created previously.
 
-While collecting feedbacks, the following statistics are displayed:
-* Total number of colllected feedbacks
-* The average score (good: 1, neutral: 0, bad: -1)
-* The percentage of positive feedback
 
-## Start the application
+### Start the application locally
+First, you need to start the backend from the previous exercise. To do so, head to the `part8/library-backend` directory and follow the instructions from the README.
 
-To start an application, do the following :
 
+Then, start the frontend:
 ```bash
 # Install dependancies
-$ yarn install
+$ npm install
+
 # Start the application
-$ yarn start
+$ npm start
 ```
 
-You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can then access the app on: http://localhost:3000/. 
